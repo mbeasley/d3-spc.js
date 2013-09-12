@@ -1,0 +1,90 @@
+#chart {
+	height: 100%;
+	width: 800px;
+}
+
+svg {
+	font-size: x-small;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+svg .title {
+	font-weight: bold;
+	font-size: small;
+}
+
+line {
+    stroke: black;
+}
+
+
+svg .axis {
+  shape-rendering: crispEdges;
+}
+
+svg .axis path {
+	fill: none;
+  	stroke: #000;
+}
+
+svg .grid {
+  shape-rendering: crispEdges;
+  stroke-width: 1px;
+  stroke: gray;
+  fill: none;
+  opacity: .15;
+}
+
+svg .line {
+	fill: none;
+	stroke-width: 1.2px;
+	stroke: black;
+}
+
+
+.line.ul, .line.ll {
+	stroke-dasharray: 5,10;
+	shape-rendering: crispEdges;
+	stroke-width: 1px;
+    stroke: rgb(248, 123, 123);
+}
+
+.line.cl {
+	stroke-dasharray:5,5;
+	shape-rendering: crispEdges;
+	stroke-width: 1px;
+    stroke: rgb(85, 213, 85);
+}
+
+.exception {
+    fill: red;
+    stroke-width: 2px;
+    stroke: red;
+}
+
+.benchmark .line {
+	stroke-width: 1px;
+	stroke-dasharray: 3,6;
+	stroke: gray !important;
+}
+
+.target .line {
+	stroke-width: 1px;
+	stroke-dasharray: 4,2;
+	stroke: black !important;
+}
+
+svg .area {
+	opacity: .5;
+	stroke-width: 0;
+}
+
+svg .point {
+	opacity: .5;
+}
+
+svg .column {
+	shape-rendering: crispEdges;
+	opacity: 1;
+	stroke-width: 0;
+}
